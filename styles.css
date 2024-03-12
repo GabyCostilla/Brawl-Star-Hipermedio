@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+    font-family: 'Playfair Display', serif;
+    background-color: #65727c; /* Azul oscuro */
+    margin: 0;
+    padding: 0;
+    color: white; /* Color de texto blanco por defecto */; /* Centra todo el texto en la página */
+}
+
+h1 {
+    color: #f2f2f2; /* Blanco ligeramente más oscuro */
+    text-align: center; /* Centra el texto */
+}
+
+h2 {
+    color: #3366cc;
+    text-align: center; /* Centra el texto */
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: center; /* Centra el texto */
+}
+
+img {
+
+    display: block; /* Para que funcione margin: 0 auto; */
+    margin: 0 auto; /* Centra horizontalmente la imagen */
+}

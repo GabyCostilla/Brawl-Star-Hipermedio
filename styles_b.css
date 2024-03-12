@@ -1,0 +1,35 @@
+body {
+    background-color: #65727c; /* Azul oscuro */
+    color: white; /* Texto en blanco para mayor contraste */
+}
+
+.brawler {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Alinea los elementos al centro entre la imagen y el otro lado de la pantalla */
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.brawler img {
+    height: 100px;
+    margin-right: 20px;
+}
+
+.brawler a {
+    color: white; /* Color del texto blanco */
+    text-decoration: none;
+}
+
+.brawler a:hover {
+    text-decoration: underline;
+}
+
+.brawler-info {
+    background-color: #1a1a2e; /* Azul oscuro */
+    color: white; /* Texto en blanco */
+    padding: 10px;
+    height: 100px;
+    border-radius: 0 5px 5px 0;
+    margin-left: auto; /* Empuja el elemento hacia el otro lado de la pantalla */
+}
