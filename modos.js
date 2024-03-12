@@ -6,6 +6,8 @@ document.addEventListener("DOMContentLoaded", function() {
         { name: "Atrapagemas" },
         { name: "Atraco" },
         { name: "Balón Brawl" },
+        { name: "Noqueo" },
+        { name: "Zona Restringida" },
     ];
 
     // Función para mostrar los modos de juego en la página
