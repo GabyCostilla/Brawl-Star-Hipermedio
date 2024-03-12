@@ -90,8 +90,8 @@ document.addEventListener("DOMContentLoaded", function() {
             const brawlerDiv = document.createElement("div");
             brawlerDiv.classList.add("brawler");
             brawlerDiv.innerHTML = `
-                <img src="${brawler.image}" alt="${brawler.name}">
-                <h2>${brawler.name}</h2>
+                <img src="personajes_img/${brawler.name}.png" alt="${brawler.name}">
+                <a href="personajes/${brawler.name}.html">${brawler.name}</a>
             `;
             brawlersList.appendChild(brawlerDiv);
         });
@@ -100,4 +100,3 @@ document.addEventListener("DOMContentLoaded", function() {
     // Llamar a la función para mostrar los Brawlers al cargar la página
     renderBrawlers();
 });
-
