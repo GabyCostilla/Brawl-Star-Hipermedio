@@ -1,0 +1,25 @@
+.container {
+    text-align: center; 
+    align-content: center;
+}
+
+.overlay {
+    display: none; 
+    position: absolute; 
+    top: 90px;
+    left: 67%;
+    transform: translateX(-50%); 
+    width: 250px; 
+    max-width: 500px; 
+    background-color: rgba(0, 0, 0, 0.7); 
+    padding: 10px; 
+    border-radius: 5px; 
+    text-align: center; 
+    overflow: hidden;
+    text-overflow: ellipsis;
+    overflow-wrap: break-word;
+}
+
+.container img:hover + .overlay {
+    display: block; 
+}

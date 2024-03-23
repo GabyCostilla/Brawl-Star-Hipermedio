@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() {
     const gameModesList = document.getElementById("game-modes-list");
 
-    // Datos de ejemplo de algunos modos de juego
     const gameModesData = [
         { name: "Atrapagemas" },
         { name: "Atraco" },
@@ -10,7 +9,7 @@ document.addEventListener("DOMContentLoaded", function() {
         { name: "Zona Restringida" },
     ];
 
-    // Función para mostrar los modos de juego en la página
+    // muestra los modos
     function renderGameModes() {
         gameModesList.innerHTML = "";
         gameModesData.forEach(mode => {
@@ -23,6 +22,6 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    // Llamar a la función para mostrar los modos de juego al cargar la página
+   
     renderGameModes();
 });

@@ -3,14 +3,43 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Datos de ejemplo de algunos Brawlers
     const brawlersData = [
-            { name: "Shelly", image: "https://via.placeholder.com/150" },
-            { name: "Colt", image: "https://via.placeholder.com/150" },
-            { name: "Nita", image: "https://via.placeholder.com/150" },
-            { name: "Bull", image: "https://via.placeholder.com/150" },
-            { name: "Jessie", image: "https://via.placeholder.com/150" },
-            { name: "Brock", image: "https://via.placeholder.com/150" },
-            { name: "Dynamike", image: "https://via.placeholder.com/150" },
-            { name: "Bo", image: "https://via.placeholder.com/150" },
+        { name: "Shelly", image: "https://via.placeholder.com/150" },
+        { name: "Colt", image: "https://via.placeholder.com/150" },
+        { name: "Nita", image: "https://via.placeholder.com/150" },
+        { name: "Bull", image: "https://via.placeholder.com/150" },
+        { name: "Jessie", image: "https://via.placeholder.com/150" },
+        { name: "Brock", image: "https://via.placeholder.com/150" },
+        { name: "Dynamike", image: "https://via.placeholder.com/150" }
+    ];
+
+    // muestra los brawlers
+    function renderBrawlers() {
+        brawlersList.innerHTML = "";
+        brawlersData.forEach(brawler => {
+            const brawlerDiv = document.createElement("div");
+            brawlerDiv.classList.add("brawler");
+
+            const brawlerImg = document.createElement("img");
+            brawlerImg.src = `personajes_img/${brawler.name}.jpg`;
+            brawlerImg.alt = brawler.name;
+
+            const brawlerLink = document.createElement("a");
+            brawlerLink.href = `personajes/${brawler.name}.html`;
+            brawlerLink.textContent = brawler.name;
+
+            brawlerDiv.appendChild(brawlerImg);
+            brawlerDiv.appendChild(brawlerLink);
+            brawlersList.appendChild(brawlerDiv);
+        });
+    }
+
+    renderBrawlers();
+});
+
+
+
+
+/*{ name: "Bo", image: "https://via.placeholder.com/150" },
             { name: "Tick", image: "https://via.placeholder.com/150" },
             { name: "8-Bit", image: "https://via.placeholder.com/150" },
             { name: "Emz", image: "https://via.placeholder.com/150" },
@@ -79,24 +108,4 @@ document.addEventListener("DOMContentLoaded", function() {
 { name: "R-T", image: "https://via.placeholder.com/150" },
 { name: "Ruffs", image: "https://via.placeholder.com/150" },
 { name: "Sam", image: "https://via.placeholder.com/150" },
-{ name: "Willow", image: "https://via.placeholder.com/150" }
- ];
-
-
-    // Función para mostrar los Brawlers en la página
-    function renderBrawlers() {
-        brawlersList.innerHTML = "";
-        brawlersData.forEach(brawler => {
-            const brawlerDiv = document.createElement("div");
-            brawlerDiv.classList.add("brawler");
-            brawlerDiv.innerHTML = `
-                <img src="personajes_img/${brawler.name}.png" alt="${brawler.name}">
-                <a href="personajes/${brawler.name}.html">${brawler.name}</a>
-            `;
-            brawlersList.appendChild(brawlerDiv);
-        });
-    }
-
-    // Llamar a la función para mostrar los Brawlers al cargar la página
-    renderBrawlers();
-});
+{ name: "Willow", image: "https://via.placeholder.com/150" }*/
