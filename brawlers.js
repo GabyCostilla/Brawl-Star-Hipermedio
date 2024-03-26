@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
     const brawlersList = document.getElementById("brawlers-list");
 
-    // Datos de ejemplo de algunos Brawlers
+
     const brawlersData = [
         { name: "Shelly", image: "https://via.placeholder.com/150" },
         { name: "Colt", image: "https://via.placeholder.com/150" },
