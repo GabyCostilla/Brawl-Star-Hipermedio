@@ -14,5 +14,5 @@
 ## Redes Sociales
 ¡Síguenos en nuestras redes sociales para mantenerte actualizado con las últimas noticias, consejos y eventos de Brawl Stars!
 - Instagram: [gabnzana_en_compota](https://www.instagram.com/gabnzana_en_compota/) 📸✨
-
+             [Pahan](https://www.instagram.com/tito.calder0n/)
 ¡Gracias por tu interés en nuestra Enciclopedia de Brawl Stars! ¡Diviértete y que gane el mejor! 💥🏆
